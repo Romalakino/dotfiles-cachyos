@@ -1,0 +1,11 @@
+# AUR packages (install via yay/paru)
+yay -S --noconfirm opencode-desktop-bin
+yay -S --noconfirm clash-verge-rev
+
+# xwinwrap — for video wallpapers
+# git clone https://github.com/adi1090x/xwinwrap.git
+# cd xwinwrap && make && sudo make install
+
+# Nordic GTK theme
+# https://github.com/EliverLara/Nordic
+# Already installed via pacman: nordic-theme

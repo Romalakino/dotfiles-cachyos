@@ -1,0 +1,6 @@
+@import "/usr/share/rofi/themes/solarized_alternate.rasi"
+
+configuration {
+    font: "Hack 12";
+    show-icons: true;
+}

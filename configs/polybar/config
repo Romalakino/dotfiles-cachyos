@@ -1,0 +1,134 @@
+include-file = ~/.config/polybar/colors.ini
+
+[bar/example]
+monitor = ${env:MONITOR:}
+width = 100%
+height = 34
+fixed-center = true
+top = yes
+bottom = no
+override-redirect = false
+
+foreground = ${colors.foreground}
+background = ${colors.background}
+pseudo-transparency = true
+
+line-size = 0
+border-top-size = 0
+border-bottom-size = 0
+
+padding-left = 2
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Hack:pixelsize=10;2"
+font-1 = "Symbols Nerd Font Mono:style=Regular:pixelsize=14;3"
+font-2 = "FontAwesome:style=Regular:pixelsize=10;2"
+
+modules-left = i3
+modules-right = pulseaudio date settings exit
+
+scroll-up = #i3.next
+scroll-down = #i3.prev
+cursor-click = pointer
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = true
+enable-click = true
+enable-scroll = true
+
+label-mode = %mode%
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.primary}
+label-mode-padding = 3
+
+label-focused = %index%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.primary}
+label-focused-padding = 3
+
+label-unfocused = %index%
+label-unfocused-foreground = ${colors.foreground-alt}
+label-unfocused-background = ${colors.surface}
+label-unfocused-padding = 3
+
+label-visible = %index%
+label-visible-foreground = ${colors.foreground}
+label-visible-background = ${colors.surface-alt}
+label-visible-padding = 3
+
+label-urgent = %index%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 3
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = @DEFAULT_SINK@
+use-ui-max = true
+
+format-volume = <label-volume>
+format-volume-background = ${colors.secondary}
+format-volume-padding = 2
+format-volume-prefix = " "
+format-volume-prefix-foreground = ${colors.foreground}
+label-volume = " %percentage%% "
+label-volume-foreground = ${colors.foreground}
+
+format-muted = <label-muted>
+format-muted-background = ${colors.secondary}
+format-muted-padding = 2
+format-muted-prefix = " "
+format-muted-prefix-foreground = ${colors.alert}
+label-muted = " muted "
+label-muted-foreground = ${colors.alert}
+
+click-left = pamixer -t
+click-right = pavucontrol
+
+[module/date]
+type = internal/date
+interval = 1
+time = " %H:%M"
+time-alt = " %A, %d %B"
+format = <label>
+format-background = ${colors.surface}
+format-padding = 2
+format-foreground = ${colors.foreground-alt}
+label = %time%
+
+[module/settings]
+type = custom/script
+exec = ~/.config/polybar/scripts/settings.sh
+interval = 5
+format = <label>
+format-background = ${colors.primary}
+format-padding = 2
+format-foreground = ${colors.foreground}
+click-left = python3 ~/.config/i3/wallpaper-menu.py
+
+[module/exit]
+type = custom/script
+exec = ~/.config/polybar/scripts/exit.sh
+interval = 5
+format = <label>
+format-background = ${colors.alert}
+format-padding = 2
+format-foreground = ${colors.foreground}
+click-left = ~/.config/polybar/scripts/exit-action.sh
+
+[settings]
+screenchange-reload = true
+compositing-background = over
+compositing-foreground = over
+compositing-overline = over
+compositing-border = over
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0

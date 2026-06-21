@@ -1,0 +1,265 @@
+/* Force dark headerbars for all GTK3 apps */
+headerbar,
+titlebar,
+.decoration {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+headerbar button,
+titlebar button {
+    background-color: #3b4252;
+    color: #d8dee9;
+    border-color: #434c5e;
+}
+
+headerbar button:hover,
+titlebar button:hover {
+    background-color: #434c5e;
+}
+
+headerbar button:active,
+titlebar button:active {
+    background-color: #4c566a;
+}
+
+/* Dark scrollbar */
+scrollbar slider {
+    background-color: #4c566a;
+}
+
+/* Dark sidebar */
+.sidebar,
+placessidebar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+/* Dark view */
+view,
+iconview {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+/* Dark menubar */
+menubar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+menubar menuitem:hover {
+    background-color: #3b4252;
+}
+
+/* Dark menu */
+menu,
+.context-menu {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+menu menuitem:hover {
+    background-color: #3b4252;
+}
+
+/* Dark toolbar */
+toolbar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+/* Dark notebook tabs */
+notebook tab {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+notebook tab:checked {
+    background-color: #3b4252;
+}
+
+/* Dark statusbar */
+statusbar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+/* General window background */
+background {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+textview text {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+entry {
+    background-color: #3b4252;
+    color: #d8dee9;
+    border-color: #434c5e;
+}
+
+button {
+    background-color: #3b4252;
+    color: #d8dee9;
+    border-color: #434c5e;
+}
+
+button:hover {
+    background-color: #434c5e;
+}
+
+button:active {
+    background-color: #4c566a;
+}
+
+switch {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+switch:checked {
+    background-color: #88c0d0;
+}
+
+scale slider {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+scale trough {
+    background-color: #434c5e;
+}
+
+scale highlight {
+    background-color: #88c0d0;
+}
+
+combobox button {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+treeview view {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+treeview header button {
+    background-color: #3b4252;
+    color: #d8dee9;
+    border-color: #434c5e;
+}
+
+checkbutton check,
+checkbutton radio {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+colorswatch {
+    background-color: #3b4252;
+}
+
+popover {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+list row {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+list row:hover {
+    background-color: #3b4252;
+}
+
+list row:selected {
+    background-color: #434c5e;
+    color: #d8dee9;
+}
+
+assistant .sidebar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+infobar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+messagedialog .titlebar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+dialog .titlebar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+.filechooser .sidebar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+expander arrow {
+    color: #d8dee9;
+}
+
+levelbar block {
+    background-color: #434c5e;
+}
+
+levelbar block:nth-child(even) {
+    background-color: #4c566a;
+}
+
+levelbar block filled {
+    background-color: #88c0d0;
+}
+
+calendar {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+calendar:selected {
+    background-color: #88c0d0;
+}
+
+overlaybar {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+tooltip {
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+progressbar trough {
+    background-color: #434c5e;
+}
+
+progressbar progress {
+    background-color: #88c0d0;
+}
+
+spinner {
+    color: #88c0d0;
+}
+
+expander header {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+.places-sidebar .sidebar-icon {
+    color: #88c0d0;
+}

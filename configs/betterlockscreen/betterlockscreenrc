@@ -1,0 +1,8 @@
+# Betterlockscreen config
+# Colors update automatically via wallpaper-menu.py
+
+off_cmd="xset dpms force off"
+
+# i3lock-color arguments
+# ring_color = outline, inside_color = surface, key-hl = primary, ring-ver = primary
+i3lock_args="-e --force-clock --timepos=x+960:y+540 --timecolor=afb2b7ff --datepos=x+960:y+580 --datecolor=919aa0ff --ringcolor=60666aff --insidecolor=40474bff --keyhlcolor=919aa0ff --bshlcolor=ff5e64ff --ringvercolor=919aa0ff --ringwrongcolor=ff5e64ff --verifcolor=afb2b7ff --wrongcolor=ff5e64ff --linecolor=00000000 --separatorcolor=60666aff --locktext='' --lockfailedtext='' --radius=80 --ring-width=6 --indpos=x+960:y+480 --time-font='Hack' --date-font='Hack' --timesize=36 --datesize=18 --timestr='%H:%M' --datestr='%A, %d %B'"
