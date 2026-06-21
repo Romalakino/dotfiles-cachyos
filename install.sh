@@ -281,6 +281,12 @@ deploy "$SCRIPT_DIR/configs/micro/settings.json" "$HOME/.config/micro/settings.j
 # opencode
 mkdir -p "$HOME/.config/opencode"
 deploy "$SCRIPT_DIR/configs/opencode/opencode.jsonc" "$HOME/.config/opencode/opencode.jsonc"
+# opencode skills
+if [ -d "$SCRIPT_DIR/configs/opencode/skills" ]; then
+    mkdir -p "$HOME/.config/opencode/skills"
+    cp -r "$SCRIPT_DIR/configs/opencode/skills/"* "$HOME/.config/opencode/skills/" 2>/dev/null || true
+    info "  OpenCode skills deployed"
+fi
 
 # Session files
 deploy "$SCRIPT_DIR/session/.profile" "$HOME/.profile"
