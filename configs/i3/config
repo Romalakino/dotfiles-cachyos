@@ -146,7 +146,6 @@ bindsym Print exec ~/.config/i3/screenshot.sh area
 bindsym $mod+Shift+s exec ~/.config/i3/screenshot.sh area
 bindsym $mod+Print exec ~/.config/i3/screenshot.sh full
 
-bindsym $mod+c exec kitty -e opencode
 bindsym $mod+b exec blueman-manager
 bindsym $mod+Shift+w exec python3 ~/.config/i3/wallpaper-menu.py
 bindsym $mod+Shift+Return exec $term
