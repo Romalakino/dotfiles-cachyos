@@ -153,7 +153,7 @@ bindsym $mod+Shift+Return exec $term
 exec_always setxkbmap -option grp:caps_toggle "us,ru" -option "grp:caps_toggle,grp_led:caps"
 exec_always --no-startup-id xcape -e 'Super_L=F12'
 
-exec xrandr --output DisplayPort-1 --mode 1920x1080 --rate 240 --pos 1440x0 --primary; xrandr --query | grep -q "HDMI-A-1-1 connected" && xrandr --output HDMI-A-1-1 --mode 1440x900 --pos 0x0
+exec sh -c 'if xrandr --query | grep -q "HDMI-A-1-1 connected"; then xrandr --output DisplayPort-1 --mode 1920x1080 --rate 240 --pos 1440x0 --primary --output HDMI-A-1-1 --mode 1440x900 --rate 74.98 --pos 0x0; else xrandr --output DisplayPort-1 --mode 1920x1080 --rate 240 --pos 0x0 --primary; fi'
 
 exec --no-startup-id ~/.config/i3/restore-wallpaper.sh
 exec --no-startup-id sh -c 'sleep 3 && xsetroot -cursor_name left_ptr'
